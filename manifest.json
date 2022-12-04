@@ -1,0 +1,22 @@
+{
+
+    "manifest_version": 2,
+    "name": "Dont get fooled!",
+    "version": "1.0",
+  
+    "description": "Rounds up prices!",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches":["*://*/*"],
+        "all_frames": true,
+        "js":["main.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
